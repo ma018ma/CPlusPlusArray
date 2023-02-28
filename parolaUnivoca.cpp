@@ -12,9 +12,7 @@ int main()
     std::cout << "inserisci la parola" << endl;
     string parola;
     cin >> parola;
-    bool univoco;
-    string doppie;
-    string singola;
+    bool univoco = true;
     for (int i = 0; i < parola.length(); i++)
     {
         for (int g = i+1; g < parola.length(); g++)
@@ -22,23 +20,18 @@ int main()
             if (parola[i] == parola[g])
             {
                 univoco = false;
-                string doppie = parola;
                 break;
             }
-            else
-            {
-                univoco = true;
-                string singola = parola;
-            }
         }
+        if (univoco = false) break;
     }
     if (univoco == true)
     {
-          cout << singola << "la parola e' univoca" << endl;
+          cout << parola << "la parola e' univoca" << endl;
     }
     else
     {
-        cout << doppie << "la parola ha doppie." << endl;
+        cout << parola << "la parola ha doppie." << endl;
     }
 
 }
