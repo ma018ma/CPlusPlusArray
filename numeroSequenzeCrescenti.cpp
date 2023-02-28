@@ -22,12 +22,11 @@ int main()
     bool crescente;
     for (int i = 0; i < lunghezza; i++)
     { cin >> numeri; // per farmi dare i numeri
-        for (int i = 0; i < lunghezza -1; i++)
+        for (int i = 0; i < lunghezza; i++) // per scorrere arrey con i
         {
             for (int g = 0; g < lunghezza -1; g++)
             {
-            if (listaInteri [g] > listaInteri [g+1] )
-            //crescente = true; 
+            if (listaInteri [i] > listaInteri [i+1] )
             {
                crescente = true;
             }

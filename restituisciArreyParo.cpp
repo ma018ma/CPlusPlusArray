@@ -25,12 +25,8 @@ int main()
     {   
         if (listaInteri[i]%2 == 0)
         {
-            paridaspostare = numeri;
-            for (int w; i <= paridaspostare; i++)
-            {
-            int pari[i] = {paridaspostare};
-            i++;
-            }
+            paridaspostare = i;
+            cout << listaInteri[i] <<endl;
         }
     }
     cout << paridaspostare << endl;
