@@ -17,9 +17,9 @@ using namespace std;
 
 int main()
 {
-    int arrey1[] = {1, 2};
+    int arrey1[] = {1,2,3};
     int lun = sizeof(arrey1) / sizeof(arrey1[0]);
-    int arrey2[] = {1, 3};
+    int arrey2[] = {1,3};
     int len = sizeof(arrey2) / sizeof(arrey2[0]);
     int valore = 0;
     for (int i = 0; i < lun; i++) // per scorrere arrey con i
@@ -29,8 +29,9 @@ int main()
             if (arrey1[i] == arrey2[g])
             {
                 valore++;
-                cout << "i valori comuni sono:" << valore << endl;
+                
             }
         }
     }
+    cout << "i valori comuni sono:" << valore << endl;
 }
