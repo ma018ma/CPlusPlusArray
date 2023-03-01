@@ -4,10 +4,6 @@
 using namespace std;
 int main()
 {
-    std::cout << "quanto numeri vuoi darmi?" << endl;
-    int spaziArrey;
-    cin >> spaziArrey;
-    int numeri;
     int listaInteri[spaziArrey] = {numeri};  
     int lunghezza = sizeof(listaInteri) / sizeof(listaInteri[0]);
     std::cout << "dammi " << spaziArrey << " numeri" << endl;
@@ -27,4 +23,5 @@ int main()
         }
         return true;
     return 0;
+}
 }
