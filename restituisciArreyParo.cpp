@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    int quanti;
+    int quanti = 0;
     int j;
     int lista[5] = {2, 3, 4, 5, 6};                   // creo arrey
     int lunghezza = sizeof(lista) / sizeof(lista[0]); // lunghezza arrey
@@ -16,10 +16,6 @@ int main()
         if (lista[i] % 2 == 0)
         {
             quanti++; // lunghezza arrey2
-        }
-        else
-        {
-            break;
         }
     }
     int lista2[quanti] = {j};                     // creo arrey
@@ -30,10 +26,6 @@ int main()
         {
             lista2[j] = lista[i];
             j++;
-        }
-        else
-        {
-            break;
         }
     }
     for (int i = 0; i < lun; i++) // per lunghezza arrey2 scorro
