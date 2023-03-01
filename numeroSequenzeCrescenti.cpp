@@ -12,31 +12,27 @@ using namespace std;
 
 int main()
 {
-    int spaziArrey;
-    cout << "quanto numeri vuoi darmi?" << endl;
-    cin >> spaziArrey;
-    int numeri;
-    int listaInteri[spaziArrey] = {numeri};
+    int listaInteri[4] = {6,7,5,8};
     int lunghezza = sizeof(listaInteri) / sizeof(listaInteri[0]);
-    cout << "dammi " << spaziArrey << " numeri" << endl;
-    bool crescente;
-    for (int i = 0; i < lunghezza; i++)
-    { cin >> numeri; // per farmi dare i numeri
+    bool crescente = true;
         for (int i = 0; i < lunghezza; i++) // per scorrere arrey con i
         {
-            for (int g = 0; g < lunghezza -1; g++)
+            for (int g = i+1; g < lunghezza -1; g++)
             {
-            if (listaInteri [i] > listaInteri [i+1] )
+                if (listaInteri [i] > listaInteri [i+1] )
             {
-               crescente = true;
+               crescente = false;
+               break;
             }
-            else 
-            {
-                crescente = false;
-            }
+
             }
         }
-    }
-    cout << crescente << " e' true"<< endl;
-    cout << crescente << " e' false"<< endl;
+        if(crescente == true)
+        {
+            cout << "l'arrey e' crescente" << endl;
+        }
+        else
+        {
+            cout << "L'arrey non e' crescente" << endl;
+        }
 }
